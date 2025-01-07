@@ -1,0 +1,151 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.editor {
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Bordas no editor */
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.ql-container {
+  border: none !important; /* Remove a borda padrão do Quill */
+}
+
+.copy-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+.note-content {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.save-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+.notes-list {
+  margin-top: 30px;
+}
+
+.note-item {
+  margin-bottom: 20px;
+}
+
+.note-content {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.note-content p {
+  margin: 10px 0;
+}
+
+small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .save-button {
+    font-size: 14px;
+  }
+
+  .editor {
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
